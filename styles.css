@@ -1,0 +1,289 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(180deg, #ffffff, #fff5f5);
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #413a3a;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+    padding: 30px 30px 0;
+}
+
+p {
+    color: #ce9797;
+    padding: 0 30px;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+form {
+    padding: 20px 30px 0;
+    position: relative;
+}
+
+input [type="email"] {
+    border: none;
+}
+
+button {
+    background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    border-style: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    box-shadow: 0px 17px 39px -13px #ce9797;
+}
+
+footer p {
+    font-size: 0.6em;
+  }
+  
+  a {
+    color: #f96262;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ce9797;
+  }
+
+.main-container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.text-content p {
+    opacity: 0.7;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    width: 25%;
+    padding: 20px 30px;
+}
+
+#useremail {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #ce9797;
+    padding: 12px 90px 12px 20px;
+    border-radius: 20px;
+    opacity: 0.4;
+}
+
+::placeholder {
+    color: #ce9797;
+    font-size: 0.9em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: 130px;
+}
+
+.success-message {
+    font-size: 0.8em;
+    color: #ce9797;
+    text-align: left;
+    padding-left: 70px;
+    display: none;
+}
+
+.error-message {
+    font-size: 0.8em;
+    color: #f96262;
+    text-align: left;
+    padding-left: 70px;
+    display: none;
+}
+
+.submit {
+    width: 80%;
+}
+
+.invalid button {
+    background-image: linear-gradient(135deg, #fff5f5, #f8bfbf);
+    box-shadow: 0px 17px 39px -13px #ce9797;
+}
+
+.valid .success-message {
+    display: block;
+}
+
+.invalid .error {
+    display: block;
+}
+
+.invalid .error-message {
+    display: block;
+}
+
+.invalid #useremail {
+    border: 2px solid #f96262;
+}
+
+@media (min-width:1220px) {
+    body {
+        background-image: url("images/bg-pattern-desktop.svg"), linear-gradient(180deg, #ffffff, #fff5f5);
+    }
+
+    h1 {
+        margin: 0;
+        float: left;
+        font-size: 3em;
+        padding-bottom: 30px;
+        padding-right: 100px;
+    }
+
+    form {
+        float: left;
+        width: 40%;
+        text-align: left;
+        padding: 20px 0 30px 100px;
+    }
+
+    button {
+        right: 170px;
+        padding: 15px 35px;
+        border-radius: 25px;
+    }
+
+    footer p {
+        position: relative;
+        bottom: -60px;
+        float: left;
+        padding-left: 100px;
+    }
+
+    #useremail {
+        padding: 15px 130px 15px 20px;
+        border-radius: 25px;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .image-top {
+        content: url("images/hero-desktop.jpg");
+        float: right;
+        height: 100vh;
+    }
+
+    .logo {
+        float: left;
+    }
+
+    .logo img {
+        width: 40%;
+        padding: 60px 100px;
+    }
+
+    .text-content {
+        float: left;
+        width: 40%;
+        text-align: left;
+        padding-left: 70px;
+    }
+
+    .text-content p {
+        padding: 0 150px 0 30px;
+        font-size: 1em;
+    }
+
+    .success-message {
+        float: left;
+        padding-left: 120px;
+        bottom: 35px;
+        position: relative;
+    }
+
+    .error-message {
+        float: left;
+        padding-left: 120px;
+        bottom: 35px;
+        position: relative;
+    }
+
+    .error {
+        width: 5%;
+        top: 29px;
+        right: 260px;
+    }
+
+}
+
+@media (min-width:1320px) {
+    button {
+        right: 210px;
+    }
+
+    .text-content p {
+        line-height: 1.8;
+    }
+
+    .error {
+        right: 300px;
+    }
+}
+
+@media (min-width:1430px) {
+    body {
+        background-size: 70%;
+    }
+    
+    h1 {
+        font-size: 3.5em;
+    }
+
+    form {
+        padding: 20px 0 30px 150px;
+    }
+
+    button {
+        right: 260px;
+    }
+
+    footer p {
+        padding-left: 150px;
+    }
+
+    .logo img {
+        width: 35%;
+        padding: 60px 150px;
+    }
+
+    .text-content {
+        padding-left: 120px;
+    }
+
+    .text-content p {
+        padding: 0 150px 0 30px;
+    }
+
+    .success-message {
+        padding-left: 170px;
+    }
+
+    .error-message {
+        padding-left: 170px;
+    }
+
+    .error {
+        width: 4%;
+        right: 350px;
+    }
+}
